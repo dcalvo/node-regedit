@@ -181,7 +181,7 @@ function baseCommand(cmd, arch) {
 	if (externalVBSFolderLocation && typeof(externalVBSFolderLocation) === 'string') {
 		scriptPath = externalVBSFolderLocation
 	} else {
-		scriptPath = path.join(__dirname, 'vbs')
+		scriptPath = path.join(__dirname, 'vbss')
 	}
 
 	return ['//Nologo', path.join(scriptPath, cmd), arch]
